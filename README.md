@@ -1,38 +1,47 @@
-# Intro to Python
+# Course slides for 'Intor to Python' GDI Minneapolis Course
 
-The slides for this course can be viewed [here](http://nicklang.com/gdi-intro-python/#/)
+* Slides are at [https://gdiminneapolis.github.io/intro-to-python](https://gdiminneapolis.github.io/intro-to-python)
+* Git Documentation: [https://git-scm.com/docs](https://git-scm.com/docs)
+* GitHub Help: [https://help.github.com/](https://help.github.com/)
 
-This is the Girl Develop It Intro to Python course. Material is loosely based on Think Python by Allen B. Downey and written by Caleb Smith
+## Contributing
 
-The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+We are always looking for help in improving our training materials. We'd like your participation as well!
 
-* N.B. - This repo should see a bit of change in the next few weeks (as of 6-24-2013) and very much constitutes a WIP
+First, read the [Contributor Covenant](CONTRIBUTOR_COVENANT.md).
 
-## Classes
+Next, you can contribute in the following ways:
 
-### Class 1
+* Submit an problem, suggestion, or question via [Issues](https://github.com/gdiminneapolis/intro-to-python/issues)
+* Write or update a page explaining something on the project [Wiki](https://github.com/gdiminneapolis/intro-to-python/wiki)
+* Fork and clone the repo, cut a branch, make your changes, and submit a [Pull Request](https://github.com/gdiminneapolis/intro-to-python/pulls)
 
-Intro to programming in Python - First steps for programming using the Python shell.
+### Prerequisites
 
-What is programming? What is Python? We'll tackle these concepts, set up a development environment, and get started working in the Python shell
+* Install [Jekyll](https://jekyllrb.com) (which requires [Ruby](http://ruby-lang.org))
 
-### Class 2
+### Downloading Slides
 
-Structured programming - Functions, Loops, and conditionals
+    $ git clone git@github.com:gdiminneapolis/intro-to-python.git
+    $ cd intro-to-python
 
-We'll be creating small programs in the text editor, implementing control flow and loading these programs into the shell.
+### Viewing slides while editing
 
-### Class 3
+    $ make
 
-Python data structures and other essential built-ins
+This will run Jekyll in server mode, hosting output on `http://localhost:4000` -- the URL will also be displayed in Jekyll's output.
 
-Lists, dictionaries and other built-in containers give the Python programmer tremendous power. We'll use these combined with other Python built-ins to process text files for information.
+Launch your browser at that URL and you can refresh the view every time you make a change.
 
-### Class 4
+### Publishing to Github Pages
 
-Higher level abstractions using object oriented and functional programming
+    $ make publish
 
-What is Object-Oriented Programming and Functional Programming and how can they help make programming easier?
+This will create the `publish/` directory and initialize it as a `git` repo pointing at the `gh-pages` branch of the repository, and run Jekyll in build mode. (Apologies, this isn't quite foolproof yet.)
 
-We'll also get started on some projects that you can do with your new Python skills.
+The file `_publish.yml` in the root directory can be set to provide overrides and fill-ins needed for publishing on GH pages. Generally speaking, nothing needs to be done with these settings.
 
+## Contributors
+
+* [Elise Porcher](https://twitter.com/elise0012) (Original author/creator)
+* Add your name here! (See above.)
