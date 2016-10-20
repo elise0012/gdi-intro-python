@@ -1,4 +1,4 @@
-# Course slides for 'Intor to Python' GDI Minneapolis Course
+# Course slides for 'Intro to Python' GDI Minneapolis Course
 
 * Slides are at [https://gdiminneapolis.github.io/intro-to-python](https://gdiminneapolis.github.io/intro-to-python)
 * Git Documentation: [https://git-scm.com/docs](https://git-scm.com/docs)
